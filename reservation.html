@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>رزرو میز | کافه آرامش</title>
+
+    <style>
+
+        body {
+            font-family: Tahoma;
+            direction: rtl;
+            margin: 0;
+            background-color: white;
+            color: brown;
+        }
+
+        header {
+            background-color: burlywood;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: brown;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+
+       
+
+        .tables {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .table-card {
+            display: inline-block;
+            vertical-align: top;
+            width: 200px;
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+            transition: 0.3s;
+        }
+
+        .table-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+        }
+
+        .free {
+            color: green;
+            font-weight: bold;
+        }
+
+        .reserved {
+            color: red;
+            font-weight: bold;
+        }
+
+        .disabled-btn {
+            background-color: grey;
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-family: Tahoma;
+            margin-top: 8px;
+        }
+
+
+
+        .reservation {
+            background-color: white;
+            width: 400px;
+            max-width: 80%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+        }
+
+        .reservation h2 {
+            text-align: center;
+            color: burlywood;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input,
+        select {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            font-family: Tahoma;
+        }
+
+        button {
+            background-color: burlywood;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Tahoma;
+        }
+
+        button:hover {
+            background-color: brown;
+        }
+
+
+        footer {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+
+       
+
+        @media (max-width: 600px) {
+
+            .table-card {
+                display: block;
+                width: 80%;
+                margin: 15px auto;
+            }
+
+            .reservation {
+                width: 80%;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <h1>رزرو میز</h1>
+
+        <p>
+            میز مورد نظر خود را انتخاب کنید
+        </p>
+
+    </header>
+
+
+    <nav>
+
+        <a href="index.html">
+             صفحه اصلی
+        </a>
+
+        <a href="menu.html">
+             منوی کافه
+        </a>
+
+    </nav>
+
+
+   
+
+    <section class="tables">
+
+        <h2>میزهای کافه</h2>
+
+
+        <div class="table-card">
+
+            <h3>میز شماره ۱</h3>
+
+            <p>
+                ظرفیت: ۲ نفر
+            </p>
+
+            <p class="free">
+                ● آزاد
+            </p>
+
+        </div>
+
+
+        <div class="table-card">
+
+            <h3>میز شماره ۲</h3>
+
+            <p>
+                ظرفیت: ۴ نفر
+            </p>
+
+            <p class="reserved">
+                ● رزرو شده
+            </p>
+
+            <button class="disabled-btn" disabled>
+                در دسترس نیست
+            </button>
+
+        </div>
+
+
+        <div class="table-card">
+
+            <h3>میز شماره ۳</h3>
+
+            <p>
+                ظرفیت: ۶ نفر
+            </p>
+
+            <p class="free">
+                ● آزاد
+            </p>
+
+        </div>
+
+
+        <div class="table-card">
+
+            <h3>میز شماره ۴</h3>
+
+            <p>
+                ظرفیت: ۴ نفر
+            </p>
+
+            <p class="free">
+                ● آزاد
+            </p>
+
+        </div>
+
+    </section>
+
+
+  
+
+    <section class="reservation">
+
+        <h2> فرم رزرو</h2>
+
+
+        <form>
+
+            <label>
+                نام و نام خانوادگی:
+            </label>
+
+            <input
+                type="text"
+                placeholder="مثلاً: سارا احمدی"
+				   required
+            >
+
+
+            <label>
+                شماره تماس:
+            </label>
+
+            <input
+                type="tel"
+                placeholder="مثلاً: 09123456789"
+				   required
+            >
+
+
+
+
+            <label>
+                انتخاب میز:
+            </label>
+
+            <select>
+
+                <option>میز شماره ۱ - ظرفیت ۲ نفر</option>
+                <option>میز شماره ۳ - ظرفیت ۶ نفر</option>
+                <option>میز شماره ۴ - ظرفیت ۴ نفر</option>
+				
+
+            </select>
+
+
+            <label>
+                تاریخ رزرو:
+            </label>
+
+            <input
+                type="text"
+                placeholder="مثلاً: ۱۴۰۵/۰۵/۲۸"
+				   required
+            >
+
+
+            <label>
+                ساعت حضور:
+            </label>
+
+            <input
+                type="text"
+                placeholder="مثلاً: ۱۸:۳۰"
+				   required
+            >
+
+
+            <br>
+
+            <button type="submit">
+                ثبت درخواست رزرو
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            کافه آرامش | منتظر دیدار شما هستیم 
+        </p>
+
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>منوی کافه آرامش</title>
+
+    <style>
+
+        body {
+            font-family: Tahoma;
+            direction: rtl;
+            margin: 0;
+            background-color: white;
+            color: brown;
+        }
+
+        header {
+            background-color: burlywood;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color:brown;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .menu {
+            width: 90%;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .menu h2 {
+            margin-top: 40px;
+            color: burlywood;
+        }
+
+        .item {
+            display: inline-block;
+            vertical-align: top;
+            background-color: white;
+            width: 200px;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+           
+            transition: 0.3s;
+        }
+
+        .item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .item img {
+            width: 180px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .item h3 {
+            color: brown;
+        }
+
+        .price {
+            color: chocolate;
+            font-weight: bold;
+        }
+
+        
+        
+
+        footer {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+
+        
+
+        @media (max-width: 600px) {
+
+            .item {
+                display: block;
+                width: 80%;
+                margin: 20px auto;
+            }
+
+            .item img {
+                width: 90%;
+                height: 180px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <h1> منوی کافه آرامش</h1>
+
+        <p>
+            انتخاب کنید و از طعم آن لذت ببرید
+        </p>
+
+    </header>
+
+
+    <nav>
+
+        <a href="index.html">
+            صفحه اصلی
+        </a>
+
+        <a href="reservation.html">
+             رزرو میز
+        </a>
+
+    </nav>
+
+
+    <div class="menu">
+
+
+       
+        <h2> نوشیدنی‌ها</h2>
+
+
+        <div class="item">
+
+            <img src="images/coffee.jpg" alt="قهوه">
+
+            <h3>قهوه</h3>
+
+            <p>
+                قهوه تازه و خوش عطر
+            </p>
+
+            <p class="price">
+                ۸۰٬۰۰۰ تومان
+            </p>
+
+        </div>
+
+
+        <div class="item">
+
+            
+
+            <img src="images/cappuccino.jpg" alt="کاپوچینو">
+
+            <h3>کاپوچینو</h3>
+
+            <p>
+                کاپوچینوی گرم و خوشمزه
+            </p>
+
+            <p class="price">
+                ۱۲۰٬۰۰۰ تومان
+            </p>
+
+        </div>
+
+
+        <div class="item">
+
+            <img src="images/tea.jpg" alt="چای">
+
+            <h3>چای</h3>
+
+            <p>
+                چای تازه و خوش عطر
+            </p>
+
+            <p class="price">
+                ۵۰٬۰۰۰ تومان
+            </p>
+
+        </div>
+
+
+      
+
+        <h2> دسرها</h2>
+
+
+        <div class="item">
+
+            <img src="images/chocolate-cake.jpg" alt="کیک شکلاتی">
+
+            <h3>کیک شکلاتی</h3>
+
+            <p>
+                کیک شکلاتی تازه
+            </p>
+
+            <p class="price">
+                ۱۰۰٬۰۰۰ تومان
+            </p>
+
+        </div>
+
+
+        <div class="item">
+
+            <img src="images/cheesecake.jpg" alt="چیزکیک">
+
+
+            <h3>چیزکیک</h3>
+
+            <p>
+                چیزکیک مخصوص کافه
+            </p>
+
+            <p class="price">
+                ۱۳۰٬۰۰۰ تومان
+            </p>
+
+        </div>
+
+
+        
+
+        <h2> غذاها</h2>
+
+
+        <div class="item">
+
+            <img src="images/burger.jpg" alt="برگر">
+
+            <h3>برگر</h3>
+
+            <p>
+                برگر مخصوص کافه
+            </p>
+
+            <p class="price">
+                ۲۲۰٬۰۰۰ تومان
+            </p>
+
+        </div>
+
+
+        <div class="item">
+
+            <img src="images/pasta.jpg" alt="پاستا">
+
+            <h3>پاستا</h3>
+
+            <p>
+                پاستای مخصوص
+            </p>
+
+            <p class="price">
+                ۲۰۰٬۰۰۰ تومان
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            کافه آرامش | منتظر دیدار شما هستیم 
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
