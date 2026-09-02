@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>رزرو میز | کافه آرامش</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/persian-date@1.1.0/dist/persian-date.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
 </head>
 <body>
 <header class="site-header">
@@ -47,10 +51,10 @@
                     <small class="error" id="tableError"></small>
                 </label>
 
-                <label>تاریخ
-                    <input id="date" type="date">
-                    <small class="error" id="dateError"></small>
-                </label>
+               <label>تاریخ
+    <input id="date" type="text" placeholder="مثلا 1405/06/12">
+    <small class="error" id="dateError"></small>
+</label>
 
                 <label>ساعت
                     <input id="time" type="time">
