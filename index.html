@@ -1,132 +1,60 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>کافه آرامش</title>
-
-    <style>
-
-        body {
-            font-family: Tahoma;
-            direction: rtl;
-            margin: 0;
-            background-color:whitesmoke ;
-            color: brown;
-        }
-
-        .welcome {
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        .welcome h1 {
-            font-size: 45px;
-            color: burlywood;
-        }
-
-        .welcome h2 {
-            font-size: 22px;
-            font-weight: normal;
-        }
-
-        .welcome p {
-            font-size: 17px;
-            line-height: 2;
-        }
-
-       
-
-      
-        .buttons {
-            margin-top: 35px;
-        }
-
-        .buttons a {
-            display: inline-block;
-            background-color: brown;
-            color: white;
-            text-decoration: none;
-            padding: 15px 35px;
-            margin: 10px;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        .buttons a:hover {
-            background-color: burlywood;
-        }
-
-        footer {
-            background-color: burlywood;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 600px) {
-
-            .welcome h1 {
-                font-size: 32px;
-            }
-
-            .buttons a {
-                display: block;
-                width: 70%;
-                margin: 15px auto;
-            }
-
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<header class="site-header">
+    <h1>کافه آرامش</h1>
+    <nav>
+        <a class="active" href="index.html">خانه</a>
+        <a href="menu.html">منو</a>
+        <a href="tables.html">میزها</a>
+        <a href="reservation.html">رزرو میز</a>
+        <a href="my-reservations.html">رزروهای من</a>
+    </nav>
+</header>
 
-
-    <section class="welcome">
-
-        <h1> کافه آرامش</h1>
-
-        <h2>«هر فنجان، یک حال خوب»</h2>
-
-        <p>
-            به کافه آرامش خوش آمدید؛
-            جایی برای نوشیدن یک قهوه خوب
-            و ساختن لحظاتی به‌یادماندنی.
-        </p>
-
-
-        
-
-
-        <nav class="buttons">
-
-            <a href="reservation.html">
-                 رزرو میز
-            </a>
-
-            <a href="menu.html">
-                 مشاهده منو
-            </a>
-
-        </nav>
-
+<main>
+    <section class="hero">
+        <div>
+            <h2>«هر فنجان، یک حال خوب»</h2>
+            <p>به کافه آرامش خوش آمدید؛ جایی برای یک نوشیدنی خوش‌طعم، غذای دلچسب و چند ساعت آرامش.</p>
+            <div class="actions">
+                <a class="btn" href="reservation.html">رزرو میز</a>
+                <a class="btn secondary" href="menu.html">مشاهده منو</a>
+            </div>
+        </div>
     </section>
 
+    <section class="section">
+        <h2 class="section-title">پیشنهادهای کافه</h2>
+        <div class="cards">
+            <article class="card">
+                <div class="emoji">☕</div>
+                <h3>کاپوچینو</h3>
+                <p>قهوه‌ای خوش‌عطر با فوم شیر نرم و لطیف.</p>
+                <a href="menu.html">مشاهده منو</a>
+            </article>
+            <article class="card">
+                <div class="emoji">🍰</div>
+                <h3>کیک شکلاتی</h3>
+                <p>یک انتخاب شیرین برای کامل کردن لحظه‌های شما.</p>
+                <a href="menu.html">مشاهده منو</a>
+            </article>
+            <article class="card">
+                <div class="emoji">🍝</div>
+                <h3>پاستا</h3>
+                <p>غذایی گرم و دلچسب برای یک دورهمی خوب.</p>
+                <a href="menu.html">مشاهده منو</a>
+            </article>
+        </div>
+    </section>
+</main>
 
-    <footer>
-
-        <p>
-            کافه آرامش | منتظر دیدار شما هستیم 
-        </p>
-
-    </footer>
-
-
+<footer>کافه آرامش | منتظر دیدار شما هستیم</footer>
 </body>
 </html>
