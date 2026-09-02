@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f8f3ed;
+    color: #3d2b1f;
+    line-height: 1.8;
+}
+
+.site-header {
+    background: #5a3d2b;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 13px;
+    border-radius: 8px;
+}
+
+nav a:hover,
+nav a.active {
+    background: #8b6247;
+}
+
+.hero {
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 6%;
+    background: linear-gradient(135deg, #ead7c3, #f8f3ed);
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0 0 12px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: #6b4630;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font: inherit;
+}
+
+.btn:hover {
+    opacity: .9;
+}
+
+.btn.secondary {
+    background: #9a765c;
+}
+
+.section {
+    width: min(1100px, 92%);
+    margin: 35px auto;
+}
+
+.section-title {
+    text-align: center;
+    margin: 0 0 25px;
+    color: #5a3d2b;
+}
+
+.cards,
+.menu-grid,
+.table-grid,
+.reservation-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card,
+.menu-card,
+.table-card,
+.reservation-card,
+.form-wrapper {
+    background: white;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 4px 16px rgba(70, 45, 30, .10);
+}
+
+.card {
+    text-align: center;
+}
+
+.card a {
+    color: #6b4630;
+    font-weight: bold;
+}
+
+.emoji,
+.menu-icon {
+    font-size: 42px;
+}
+
+.menu-card {
+    text-align: center;
+}
+
+.menu-card strong {
+    color: #6b4630;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: bold;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d4c2b3;
+    border-radius: 8px;
+    background: white;
+    font: inherit;
+}
+
+.table-card {
+    text-align: center;
+    border-top: 5px solid #6b4630;
+}
+
+.table-card.reserved {
+    border-top-color: #a44747;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.status.available {
+    background: #dcefdc;
+    color: #276227;
+}
+
+.status.reserved {
+    background: #f4d8d8;
+    color: #8a2929;
+}
+
+.table-card .btn {
+    width: 100%;
+}
+
+.table-card .btn:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.form-wrapper {
+    max-width: 850px;
+    margin: auto;
+}
+
+.hint {
+    text-align: center;
+    color: #725d4d;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+}
+
+.error {
+    min-height: 22px;
+    color: #b3261e;
+    font-weight: normal;
+}
+
+.form-message {
+    min-height: 28px;
+    font-weight: bold;
+}
+
+.form-message.success {
+    color: #276227;
+}
+
+.form-message.fail {
+    color: #a12626;
+}
+
+.reservation-card h3 {
+    margin-top: 0;
+}
+
+.reservation-card p {
+    margin: 6px 0;
+}
+
+.cancel-btn {
+    margin-top: 12px;
+    background: #a44747;
+}
+
+.empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 35px;
+    background: white;
+    border-radius: 14px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #5a3d2b;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
