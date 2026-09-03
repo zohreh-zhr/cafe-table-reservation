@@ -265,6 +265,19 @@ function cancelReservation(reservationId) {
 
     renderReservations();
 }
+function setupPersianDatePicker() {
+    const dateInput = document.getElementById("date");
+
+    if (!dateInput || typeof $ === "undefined" || !$.fn.persianDatepicker) {
+        return;
+    }
+
+    $(dateInput).persianDatepicker({
+        format: "YYYY/MM/DD",
+        autoClose: true,
+        initialValue: false
+    });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     if (!localStorage.getItem("cafeTables")) {
@@ -274,6 +287,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderTables();
     setupReservationForm();
     renderReservations();
+    setupPersianDatePicker();
 
     const capacityFilter = document.getElementById("capacityFilter");
     const statusFilter = document.getElementById("statusFilter");
