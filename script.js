@@ -1,6 +1,6 @@
 const DEFAULT_TABLES = [
     { id: 1, capacity: 2, status: "available" },
-    { id: 2, capacity: 4, status: "reserved" },
+    { id: 2, capacity: 4, status: "available" },
     { id: 3, capacity: 6, status: "available" },
     { id: 4, capacity: 4, status: "available" }
 ];
